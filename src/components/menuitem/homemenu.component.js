@@ -9,19 +9,29 @@ export default class homemenuComponent extends Component {
       items : [
         {
           title: 'CARROS',
-          buttonText: 'Compre agora'
+          buttonText: 'Compre agora',
+          id: 1,
+          linkUrl: 'CARROS'
         }, {
           title: 'SEGURO',
-          buttonText: 'Faça agora'
+          buttonText: 'Faça agora',
+          id: 2,
+          linkUrl: 'hats'
         }, {
           title: 'REVISÃO',
-          buttonText: 'Faça agora'
+          buttonText: 'Faça agora',
+          id: 3,
+          linkUrl: 'hats'
         }, {
           title: 'CAMINHÕES',
-          buttonText: 'Compre agora'
+          buttonText: 'Compre agora',
+          id: 4,
+          linkUrl: 'hats'
         }, {
           title: 'ONIBUS',
-          buttonText: 'Compre agora'
+          buttonText: 'Compre agora',
+          id: 5,
+          linkUrl: 'hats'
         }
       ]
     }
@@ -33,7 +43,7 @@ export default class homemenuComponent extends Component {
   render() {
     return(
       <>
-        {this.state.items.map((item, key) => (<MenuItem title={item.title} buttonText={item.buttonText}/> ))}
+        {this.state.items.map(({id , ...sectionProps}) => (<MenuItem key={id} {...sectionProps}/> ))}
       </>
     );
   }

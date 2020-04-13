@@ -1,7 +1,10 @@
 import React from "react";
+import { withRouter } from 'react-router-dom';
 
-const MenuItem = ({ title, buttonText }) => (
-  <div className='menu-item'>
+const MenuItem = ({ title, buttonText, history, linkUrl,match }) => (
+  <div className='menu-item' onClick={() => {
+    history.push(`${match.url}${linkUrl}`); console.log(history)
+  }}>
     <div className='menu-item_content'>
       <h1 className='menu-item_content_title'>{title}</h1>
       <h2 className='menu-item_content_subtitle'>COMPRE AGORA</h2>
@@ -9,4 +12,4 @@ const MenuItem = ({ title, buttonText }) => (
   </div>
 )
 
-export default MenuItem;
+export default withRouter(MenuItem);
