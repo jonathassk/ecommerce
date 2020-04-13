@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import MenuItem from "./Menuitem";
 
-export default class homemenuComponent extends Component {
+export default class homemenu extends Component {
   constructor(props) {
     super(props);
 
@@ -11,7 +11,7 @@ export default class homemenuComponent extends Component {
           title: 'CARROS',
           buttonText: 'Compre agora',
           id: 1,
-          linkUrl: 'CARROS'
+          linkUrl: 'carros'
         }, {
           title: 'SEGURO',
           buttonText: 'Faça agora',
