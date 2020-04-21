@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './login.styles.scss';
+import {singInWithGoogle} from "../../firebase/firebase.utils";
 
 export default class LoginDiv extends Component {
   render () {
@@ -11,6 +12,7 @@ export default class LoginDiv extends Component {
         <label htmlFor='passwordInput' className='labelForm'>Password</label>
         <input type='password' className='loginInput' id='passwordInput'/>
         <button className='buttonLogin'>Login</button>
+        <button className='buttonLogin' onClick={singInWithGoogle}>Login com conta google</button>
         <p className='forgotLogin'>Esqueceu seus dados?</p>
       </>
     );
