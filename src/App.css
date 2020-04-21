@@ -1,11 +1,7 @@
-.homepage {
-
-    margin-left: 5%;
-    margin-right: 5%;
-
-.menu {
+.App {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-self: center;
 }
-}
+

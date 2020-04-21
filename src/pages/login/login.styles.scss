@@ -1,0 +1,68 @@
+%inputText {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid rgb(191, 191, 191);
+  background-color: rgba(0,0,0,0);
+  color: rgb(109, 109, 109);
+}
+
+input:focus {
+  outline: none;
+}
+
+.bodyPrincipal{
+  margin-top: 80px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+
+  .registerDiv {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    flex-wrap: wrap;
+    width: 50%;
+    border-radius: 5px;
+    min-width: 300px;
+    background-color: #dcdcdc;
+
+
+    .loginInput {
+      @extend %inputText;
+    }
+    .loginTitle {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #717171;
+      font-size: 3em;
+      width: 90%;
+    }
+    .loginInput{
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .labelForm{
+      margin-bottom: 5px;
+    }
+    .forgotLogin {
+      text-align: center;
+      color: rgb(128, 128, 128);
+    }
+    .forgotLogin:hover {
+      color: black;
+    }
+    .buttonLogin {
+      background-color: #029a9a;
+      color: white;
+      padding: 10px;
+      width: 100px;
+      border: 0;
+      border-radius: 3px;
+      }
+  }
+
+}

@@ -7,11 +7,15 @@ class Shop extends Component {
     this.state = {
       items: ShopData,
       carros: [],
+      caminhoes: [],
     }
   }
 
   componentDidMount() {
-    this.setState({carros: this.state.items.cars[0].items.slice(0,4)})
+    this.setState({
+      carros: this.state.items.cars[0].items.slice(0,4),
+      caminhoes: this.state.items.cars[1].items.slice(0,4)
+    })
   }
 
   render(){
@@ -19,10 +23,8 @@ class Shop extends Component {
     console.log(this.state.carros)
     return(
       <>
-        {this.state.items.cars.map((item, key) => (
-          <Collection key={key} title={item.title} items={this.state.carros}/>
-
-        ))}
+        <Collection title={this.state.items.cars[0].title} items={this.state.carros}/>
+        <Collection title={this.state.items.cars[1].title} items={this.state.caminhoes}/>
       </>
     );
   }

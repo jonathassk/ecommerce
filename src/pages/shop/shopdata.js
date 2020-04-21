@@ -31,10 +31,12 @@ const Data = {
     items: [{
       id: 1,
       trend: 'MERCEDES-BENZ',
+      model: 'model 1',
       price: 350000,
     }, {
       id: 2,
       trend: 'IVECO',
+      model: 'model 2',
       price: 380293,
     }]
   }]

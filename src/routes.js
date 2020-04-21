@@ -1,14 +1,15 @@
 import React from "react";
-import {BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Homepage from "./pages/homepage/homepage";
-import shop from './pages/shop/shop.component';
+import Shop from './pages/shop/shop.component';
+import Login from './pages/login/login.component';
+
 const Routes = () => (
-  <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Homepage} />
-      <Route exact path="/carros" component={shop} />
+      <Route exact path="/carros" component={Shop} />
+      <Route exact path="/login" component={Login} />
     </Switch>
-  </BrowserRouter>
 )
 
 export default Routes;

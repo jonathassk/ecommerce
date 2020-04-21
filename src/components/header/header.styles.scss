@@ -1,0 +1,24 @@
+.header-div {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+
+  .header-div_rigthSide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    align-items: center;
+
+    .header_nav {
+      text-decoration: none;
+      color: rgb(160, 160, 160);
+    }
+
+    .header_nav:hover {
+      color: rgb(0,0,0);
+    }
+  }
+}

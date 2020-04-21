@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 
 const MenuItem = ({ title, buttonText, history, linkUrl,match }) => (
   <div className='menu-item' onClick={() => {
-    history.push(`${match.url}${linkUrl}`); console.log(history)
+    history.push(`${match.url}${linkUrl}`);
   }}>
     <div className='menu-item_content'>
       <h1 className='menu-item_content_title'>{title}</h1>
