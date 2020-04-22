@@ -55,14 +55,31 @@ input:focus {
     .forgotLogin:hover {
       color: black;
     }
-    .buttonLogin {
-      background-color: #029a9a;
-      color: white;
-      padding: 10px;
-      width: 100px;
-      border: 0;
-      border-radius: 3px;
+    .loginButtonsDiv {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+
+      button {
+        background-color: black;
+        width: 200px;
+        border: 0;
+        border-radius: 3px;
+        color: white;
+        padding: 10px;
       }
+      .buttonGoogle {
+        border-radius: 0;
+        background-color: #068bee;
+        margin-bottom: 0px;
+      }
+      .buttonLogin {
+        background-color: black;
+        margin-bottom: 10px;
+      }
+    }
+
   }
 
 }

@@ -11,9 +11,11 @@ export default class LoginDiv extends Component {
         <input type='text' className='loginInput' id='usernameInput'/>
         <label htmlFor='passwordInput' className='labelForm'>Password</label>
         <input type='password' className='loginInput' id='passwordInput'/>
-        <button className='buttonLogin'>Login</button>
-        <button className='buttonLogin' onClick={singInWithGoogle}>Login com conta google</button>
-        <p className='forgotLogin'>Esqueceu seus dados?</p>
+        <div className='loginButtonsDiv'>
+          <button className='buttonLogin'>Login</button>
+          <button className='buttonGoogle' onClick={singInWithGoogle}>SIGN IN WITH GOOGLE</button>
+        </div>
+          <p className='forgotLogin'>Esqueceu seus dados?</p>
       </>
     );
   }
